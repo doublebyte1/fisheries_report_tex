@@ -1,0 +1,342 @@
+ % !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage{listings}
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margins=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+\usepackage{subfigure}
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customizable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{url} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+\usepackage{appendix}
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customize the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{PROJECT PROPOSAL:\\ Development and Implementation of Fisheries Management Tools in African Countries}
+\author{JS}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}\label{Introduction}
+The project’s longer-term development objective is to contribute to the sustainable management of the fisheries exploiting the living resources of the Ocean in general, in accordance with the Code of Conduct for Sustainable Fisheries and the Ecosystem Approach to Fisheries.
+The immediate objective is to improve the technological (software/hardware) component of the small-scale fisheries monitoring system.
+
+%speak about hardware and software.
+%speak about free and open source, ownership and engaging the community
+%Data challenge: recovering data, integrating data and creating new data
+%Data quality control
+%Interpolating data (intelligence), sampling based metiers
+%loose tie architecture (multiple OS components): statistics on R, GIS analysis on Quantum, etc
+%Distributed model with embedded devices (mobile phone technology) -  hardware
+%Algorithms: fuzzy approach, AI, GIS, 
+%technologies: data visualization tools, remote sensing, environmental modelling, Internet, Geo-statistics
+%Agile approach: small team, interaction, release often. forums, git, Wiki, meetings, etc
+%Deal with different levels of data completeness
+
+\section{Background and Justification}\label{background}
+
+Many systems have been developed on the past few years, in order to address the modern challenges of fisheries data management. Some of these systems (like for instance Fishframe~\cite{fishframe}) developed quite a lot some components of the system such as data importing or validation but did not cover other components, such as raw data acquiring which being the first step, is in many cases essential for the overall functioning of the system. There are also many examples of systems (\cite{fishframe},~\cite{intercatch}) which use the web has a primary interface and therefore require a stable Internet connection, with a significant bandwidth; although this is desirable, and progressively more common, it is not always the scenario we encounter in developing countries, and therefore this fact should be taken in account when planning and designing a system that should reach the maximum number of adopters.\\
+Although free and/or open source is increasingly recognized as a valuable development and licensing model and some fisheries management systems had already adopt it (see~\cite{fishframe}), the  fact that they still rely partially or fully in proprietary software, like for instance MS Access (see \cite{intercatch},~\cite{tuna}), prevents them from fully enjoying the advantages of such a model; these advantages include, amongst many other things, the zero development cost that can increase the software ownership by countries with limited budgets (see section~\ref{objectives}).\\
+Unfortunately, FishFrame, Intercatch and the Canadian Albacore Tuna Catch and Effort Relational Database System are still not the rule, and in many places such as Dominican Republic, Western Samoa or Uganda, the technological component and automation of tasks are still in their early stages (see~\cite{victoria},~\cite{dominican},~\cite{samoa}); data collection methods are still limited to sheets of paper and databases are still not implemented to store and manage this data; needless to say GIS as modelling/visualization tools are nearly inexistent, although the "need" of a spatial support for information is clearly shown by hand-drawn maps.\\
+In the next section (see~\ref{objectives}) we present a set of fisheries management tools that pretend to fill some of these "gaps" on existent systems, reusing some of its (good) ideas and adding new technologies that are "giving cards" on other fields (like fuzzy mapping, on section~\ref{output}, or artificial intelligence), having in mind the limitations and potentialities of the recipients (developing countries). Some of these ideas also arise during the development of Medfisis-CAS~\cite{medfisis}, an (almost) full and open-source system that reunites data from Logbook and Artisanal Fisheries in the same application/database; some of the concepts developed during this project such as abstractability of entities and configurability of components can be very useful in all stages of Fisheries Management Systems.\\
+Figure~\ref{challenges} shows some of the challenges that can be addressed by a set of fisheries management tools. We propose a loose couple architecture, where we maximize the use of existing tools: to cut development time, to benefit from their value and also to involve a community of users that can take advantage of their expertise in specialized tools (like for instance R, or QGIS) to push the system further. The modularization of the system also means that we can distribute tasks, and till a certain extent develop them independently without compromising the rest of the system.\\
+
+%open source
+%creation of a community /AGILE model for development
+%improvement of the manuals
+%success stories in other areas 
+
+  \begin{figure}[!ht]%[htbp]
+    \begin{center} 
+	\includegraphics[width=\textwidth ]{challenges_cas.png}
+      \caption[Some Interesting Challenges on Fisheries Management Systems;] {Some Interesting Challenges on Fisheries Management Systems;}
+      \label{challenges} % so that one can \ref it elsewhere	
+    \end{center} 
+  \end{figure}
+
+
+\section{Project Objectives}\label{objectives}
+The design of a software system for fisheries management, as described in section~\ref{background} (figure~\ref{challenges}), should contemplate four stages:
+\textbf{input, validation, transformation and output}. The main target for each of this stages is the data about fisheries, in its raw or transformed state (catch, efforts), but it can also be other (complementary) types of data (meteorological, oceanographical, socio-economic, etc). In the following subsections we identify a serious of tasks that are \textit{on-demand}, and could result in very useful tools for fisheries scientists and managers. They are not limitative, and in our modular design they can be seen as a first approach rather than a complete description of the system.\\
+
+\subsection{Data Input}\label{input}
+The data input component contemplates the collection of information for the system, either by creating this information "from scratch" or by importing it from different supports/formats.
+
+\begin{itemize}
+  \item \textbf{Tools for Sampling Design}: Before even introducing information in the system, it is often necessary to collect this information; the design of a an unbiased sampling scheme, that minimizes the costs and maximizes the quality of the results it is an important and often overlooked task; overlooked, because many times the designer is not provided with the necessary tools to make it an easy and efficient process. There are many advantages of using a spatial framework (GIS) on this particular problem, and suggestions can guide the sampler to informed and wise decisions.
+  \item \textbf{Research on Open Standards and Distributed Models for Data Exchange:} The problem of exchanging data between different instances of the system is a pertinent and frequent one. JSON~\cite{json} and SQLite~\cite{sqlite} are open and well-known standards that are "light" alternatives to XML. Also, the design and implementation of a server-client model, where we leave the "heavy processing load" to the server and create "light" data acquiring clients (for instance running on mobile phones and Ipads) can simplify the task of data integration, as we only update restricted parts of the system.
+  \item \textbf{Data Recovering Tools:} There is a large quantity of historical data that is lost in terms of its value, just because it is not in an usable format. Data series take many years to assemble, and not only it costs a lot of money to generate new data, but it is not actually possible to recreate past information, so when this information is lost it is lost forever. It could be a very rewarding task to at least try to compile this information, that may not be usable for different reasons; hard disks that have bad sectors, obscure data formats whose specification was lost, data in non digital support and nearly illegible: these are all problems eligible for "data archaeology", that can make use of advanced software techniques such as: writing recognition, deyncription algorithms and hard-disk recover tools.
+  \item \textbf{Integrate data from different systems/sources:} The integration of different types of information provides a rich basis for the analysis and transformation of information; this includes having data from different sources such as oceanographical, meteorological, sociological, etc; apart from implementing a system that is able to import different formats (satellite images, excel spreadsheets, vector maps, etc) it is also relevant to design a system that can deal with the nature of this variability - for instance recreational fisheries data, logbooks and sales slips can be integrated with a unified and generic design and provide a richer basis for fisheries statistical analysis (see~\cite{medfisis}).
+  \item \textbf{Data Entry User Interfaces:} Database clients are a \textit{milestone} in fisheries applications and common examples of this are digital logbooks and fleet register software's (see~\cite{medfisis}). They reproduce the behavior of paper sheets for data collection, with all the advantages of data checking, and "feed" directly the database; if they are well designed and the data operators are trained, are also quicker and more friendly to use than the replaced papper sheets. There is still a room for improvement on this UIs, for instance enabling multiple choices or configurable validation rules~\footnote{As an example, some of this features were already implemented in CAS Medfisis~\cite{medfisis}}.
+\end{itemize}
+
+  \begin{figure}[!ht]%[htbp]
+    \begin{center} 
+	\includegraphics[width=\textwidth ]{geographic_frame}
+      \caption[This \textit{tree-like} widget is a tool developed in Medfisis~\ref{medfisis} to assist in the design of a sampling frame; the user can drag and drop elements from one group to another, which can be an interesting feature for designing sampling schemes;] {This \textit{tree-like} widget is a tool developed in Medfisis~\cite{medfisis} to assist in the design of a sampling frame; the user can drag and drop elements from one group to another, which can be an interesting feature for designing sampling schemes;}
+      %\label{challenges} % so that one can \ref it elsewhere	
+    \end{center} 
+  \end{figure}
+
+
+  \begin{figure}[!ht]%[htbp]
+    \begin{center} 
+	\includegraphics[width=\textwidth ]{fishing_trip_small}
+      \caption[Screenshot of a data entry form for fishing tip data, on CAS Medfisis~\cite{medfisis}; on this system, forms were designed to accommodate at the same time logbook and artisanal fisheries data;] {Screenshot of a data entry form for fishing tip data, on CAS Medfisis~\cite{medfisis}; on this system, forms were designed to accommodate at the same time logbook and artisanal fisheries data;}
+      %\label{challenges} % so that one can \ref it elsewhere	
+    \end{center} 
+  \end{figure}
+
+\subsection{Data Validation}\label{validation}
+Since the data entering the system may arrive from sources other than its data generator interfaces\footnote{The data entry interfaces should have already their own validation routines removing, at least partially, the need for this step.}, it is important to control the quality and validity of information we are inputing; this step is fundamental for all the following ones, since "bad quality" data will compromise the entire system ("garbage in, garbage out").\\
+The Fishframe application~\cite{fishframe}, developed by the Danish Institute for Fisheries Research, presents an interesting and complete multi-step validation layer; on a first stage it is performed a basic check, looking at the structure of the data, ranges of values and duplicate values; on a second stage, a more complex check searches for the correctness of the dependency between fields; finally, the last check (which is not compulsory) performs a global analysis, looking at the general patterns in order to identify outliers. Apart from this, it also allows some customizable checks to be introduced by the user, that can be performed automatically. This flexibility and completeness of the validity step, inspired us to identify the following tasks in the data validation component of this system:
+
+\begin{itemize}
+  \item \textbf{Detection of redundant data}: The detection (and consequent removal) of duplicate records is an important task, in order to have a "clean" database. It is not complicate to identify automatically records that are \textbf{exactly} identical, but the problems arise when we have for instance spelling mistakes, and records that are \textit{almost} the same, but not exactly the same. As this situations are dubious, and may correspond or not to duplicate data, they require user supervision to confirm it; however, there is no reason why they can not be identified and presented to the operator has "possible duplicates"; for this task, it is very useful to use data mining techniques such as a fuzzy approach to language~\cite{fuzzy}.
+
+  \item \textbf{Detection of invalid data based on configurable rules}: Generic rules can be applied to check for the correctness of the data types, correctness of keys, etc, directly based on the database schema. However, some rules such as the format of strings, ranges of values, may change from system to system  (for instance according to the geographic location) and the option to create them should be left to the user. To avoid "hard-coding" of rules, which would require a programmer's intervention and consequently difficult the process of exploratory analysis, we propose an interface for user configurable rules. This interface can be similar to a query builder such as the one represented in~\ref{builder}, which may be familiar to some users.
+
+  \item \textbf{Detection of Outliers}: Outliers might arise due to careless data acquiring, instrument malfunction, wrong data processing routines, or any other reasons~\cite{outliers}; generic methods based on tabular data (for instance using a principal component analysis) can be used to perform this task, but there is also room for other techniques such as data mining, or GIS; for data with a spatial distribution (which is often the case in fisheries) GIS can provide a very valuable tool for capturing the general spatial pattern and consequently the values that fall outside this pattern (outliers)(see figure~\ref{dem}).
+  After detecting and removing outliers values, we are left with the problem of imputation of "missing values" to replace the removed information (see section~\ref{transformation})
+
+\end{itemize}
+
+  \begin{figure}[!ht]%[htbp]
+    \begin{center} 
+	\includegraphics[width=0.5\textwidth ]{builder.jpg}
+      \caption[Query builder from ArcGIS;]
+{Query builder from ArcGIS; source:~\url{http://woodshole.er.usgs.gov/pubs/of2006-1381/html/fig19.html};}
+      \label{builder} % so that one can \ref it elsewhere	
+    \end{center} 
+  \end{figure}
+
+  \begin{figure}[!ht]%[htbp]
+    \begin{center} 
+	\includegraphics[width=0.8\textwidth ]{dem.png}
+      \caption[A Digital Elevation Model (DEM) like the one above, can be used to generate a surface of values in order to detect outliers;]
+{A Digital Elevation Model (DEM) like the one above, can be used to generate a surface of values in order to detect outliers; source:~\url{http://www.grass-kr.org/research/demo1/index.html};}
+      \label{dem} % so that one can \ref it elsewhere	
+    \end{center} 
+  \end{figure}
+
+
+\subsection{Data Transformation}\label{transformation}
+Data transformation consists in using the information in the system and apply transformations to it, in order to generate new information. These transformations may be used to estimate values extending the scope of the dataset, or to generate indicators that characterize the dataset, like for instance the CPUE, or both. In this system we suggest facilitating the export of data and leave (some) more complex data analysis to specialized software such as R (figure~\ref{lengths}) or QGis(figure~\ref{layers}).
+
+  \begin{figure}[!ht]%[htbp]
+    \begin{center} 
+	\includegraphics[width=\textwidth]{lengths}
+      \caption[This analysis of the size structure was created using the R package;]
+{This analysis of the size structure was created using the R package; source:~\url{http://www.ncfaculty.net/dogle/fishR/index.html};}
+      \label{lengths} % so that one can \ref it elsewhere	
+    \end{center} 
+  \end{figure}
+
+  \begin{figure}[!ht]%[htbp]
+    \begin{center} 
+	\includegraphics[width=\textwidth]{layers}
+      \caption[QGIS (in this example using the grass functionality) can be used to overlay different types of information;]
+{QGIS (in this example using the grass functionality) can be used to overlay different types of information; source:~\url{http://geoinformatics.fsv.cvut.cz/gwiki/Deriving_Hydrological_Response_Units_\%28HRUs\%29_using_a_Web_Processing_Service_implementation_based_on_GRASS_GIS};}
+      \label{layers} % so that one can \ref it elsewhere	
+    \end{center} 
+  \end{figure}
+
+Bellow are examples of some specific (and common) problems with catch data, for which we propose to develop some solutions in the system.% One is that we are missing data from our sampling universe (for instance it is an outlier or simply it was not sampled); the other is the data exists, but it is incomplete since the 
+
+\begin{itemize}
+  \item \textbf{Imputation of missing data}: Under-sampled or non sampled strata lead to an unknown bias, a problem that should be reduced with a good sampling design~\cite{ices}. For the situations where we have to deal with missing values, it is possible to inmputate them, having in mind that also the method used for this operation can introduce some bias in the system. According to ICES~\cite{ices} automatic methods should be avoid, in favor of expert knowledge, but they can be aided by spatial modelling techniques having in mind that to be use with success the spatial distribution should remain stable over time; this is a cue for developing GIS based models, that can provide the expert with a good basis for informed choices.
+
+  \item \textbf{Allocate Catch in undefined areas}: On the Canadian Albacore Tuna Catch and Effort Relational Database~\cite{tuna} it is presented the problem of having sales or logbook catch data, whose geographic area is undefined. Instead of discarding these values from the calculations of catch by area, the authors found ways to distribute the catch and effort, following the overall geographic pattern of fleet; they allocate these values in proportion with the total catch and vessel distribution and for this purpose GIS can be very useful, for instance to produce a grid, or a contour map (see figure~\ref{kernel}) with frequencies.
+
+  \item \textbf{Estimate known unreported catch}: Another delicate problem arises from the incomplete vessel count. If there is an unreported effort than it will probably be reflected in an unreported catch. For the cases where it is known that an unreported effort exists, the authors of the the Canadian Albacore Tuna Catch and Effort Relational Database~\cite{tuna} suggest to extrapolate the total catch estimates based, on estimated number of unreported vessels. According to~\cite{morocco}, unreported catch can be as significant as 50\% of the total catch and therefore it is important to find suitable methods to approach this problem, like for instance the Monte Carlo Simulation (see figure~\ref{montecarlo}).
+
+\end{itemize}
+
+  \begin{figure}[!ht]%[htbp]
+    \begin{center} 
+	\includegraphics[width=0.5\textwidth]{kernel}
+      \caption[The Kernel Home Range Method is a probability measurement that outputs contours, based on ponctual observations;]
+{The Kernel Home Range Method is a probability measurement that outputs contours, based on ponctual observations; source:~\url{http://www.bio.davidson.edu/people/midorcas/GISclass/GISprojects/grayson/GISMethods.htm};}
+      \label{kernel} % so that one can \ref it elsewhere	
+    \end{center} 
+  \end{figure}
+
+  \begin{figure}[!ht]%[htbp]
+    \begin{center} 
+	\includegraphics[width=\textwidth]{montecarlo}
+      \caption[In this example, Monte Carlo Simulation was used to elaborate estimates of total extractions of all species from Moroccan waters; in the image we see the comparison with the total reported catch;]
+{In this example~\cite{morocco}, Monte Carlo Simulation was used to elaborate estimates of total extractions of all species from Moroccan waters; in the image we see the comparison with the total reported catch;}
+      \label{montecarlo} % so that one can \ref it elsewhere	
+    \end{center} 
+  \end{figure}
+
+%Apart from this, interpolation/extrapolation algorithms could be developed to deal with different types of information (effort, catch, climatological data, etc).
+
+\subsection{Data Output}\label{output}
+Data output, of raw or transformed information, is a component where it is possible (and desirable) to facilitate the link with other platforms by using "friendly" and well-known formats. This could include formats for tabular data (for excel, R, etc), but also formats for spatial data (shapefiles, GeoJSON,etc).\\
+GIS provide some very-rich and expressive visualization tools with a great potential for fisheries data, that we will discuss summarily in the next few paragraphs.\\
+Web mapping is the process of designing, implementing, generating and delivering maps on the World Wide Web~\footnote{\url{http://en.wikipedia.org/wiki/Web_mapping}}. Compared to "traditional" maps, maps on the internet have many other advantages such as "live updating", and link with many other sources of information; they provide the same interactivity as a GIS software, with the advantage of not requiring a specific software client, since they can run on an internet browser. Web maps are normally incorporated in portals, together with other types of information, like in the case of ICES Ecosystem Data~\cite{ices2} (see figure~\ref{webmap}), but they can also be embedded in a software application (see figure~\ref{marble}).
+
+  \begin{figure}[!ht]%[htbp]
+    \begin{center} 
+	\includegraphics[width=\textwidth]{webmap}
+      \caption[Web map of a ICES fish trawl Survey dataset, overlaying a grid of CPUE on top of a layer of Marble (Nasa Worldwind);]
+{Web map of a ICES fish trawl Survey dataset, overlaying a grid of CPUE on top of a layer of Marble (Nasa Worldwind)~\cite{ices2};}
+      \label{webmap} % so that one can \ref it elsewhere	
+    \end{center} 
+  \end{figure}
+
+  \begin{figure}[!ht]%[htbp]
+    \begin{center} 
+	\includegraphics[width=\textwidth]{marble}
+      \caption[Marble is a free and open source application that displays webmaps, along with other types of maps in a C++ application;]
+{Marble~\footnote{\url{http://edu.kde.org/marble/}} is a free and open source application that displays webmaps, along with other types of maps in a C++ application; source:~\url{http://edu.kde.org/marble/screenshots/generic/marble-linkoeping.png};}
+      \label{marble} % so that one can \ref it elsewhere	
+    \end{center} 
+  \end{figure}
+
+Continuous maps showing densities, can be created using grids or contours or other methods such as TINs. Grids (such as the one on figure~\ref{webmap}) are very common to represent distributions of fishing effort or catches; On the Geocrust project (see~\cite{geocrust}), the generation of grids with different sizes allowed the user to have a more generalized or more detailed perception of the fishing effort, which calls its attention to different properties (see figure~\ref{grids}).
+
+\begin{figure}[ht]
+\centering
+\subfigure[Density map of fishing effort, using a large grid;]{
+   \includegraphics[width=0.5\textwidth] {densidades99_5x5}
+ }
+ \subfigure[Density map of fishing effort, using a small grid;]{
+   \includegraphics[width=0.5\textwidth] {densidades99a.png}
+ }
+\caption[Fishing effort maps generated by GeoCrust 2.0. To produce these maps the user can choose one or more vessels for a given period of time quarter, semester, and year); VMS data from valid fishing trips trawl hauls. Density grid size set by the user (minimum 0.06 x 0.06 nm);]
+{Fishing effort maps generated by GeoCrust 2.0. To produce these maps the user can choose one or more vessels for a given period of time (quarter, semester, and year); VMS data from valid fishing trips trawl hauls. Density grid size set by the user (minimum 0.06 x 0.06 nm);}
+\label{grids}
+\end{figure}
+
+GIS functions for cartography are generally based on boolean logic: that is, sharp frontiers between entities. However, when there is uncertainty and vagueness attached to a certain phenomena, this "false" precision may be awkward or simply inadequate (see~\cite{fuzzy2}). The Zadeh’s fuzzy set theory is an alternative to this boolean logic and has been propposed has a foundation to GIS design, that can be incorporated to cartographic display of phenomena with a certain imprecision associated to them. On figure~\ref{fuzzy} we see the comparison of a traditional map, with sharp boundaries and a fuzzy map.\\
+On fisheries surveys, where often spatial data relies on human description (for instance a fishermen describing where he was fishing), this could provide a very interesting approach.
+
+  \begin{figure}[!ht]%[htbp]
+    \begin{center} 
+	\includegraphics[width=\textwidth]{fuzzy}
+      \caption[This is an illustrative example of an analysis with a fuzzy logic approach (left) and a crisp approach (right);]
+{This is an illustrative example of an analysis with a fuzzy logic approach (on the left) and a crisp approach (on the right)~\cite{fuzzy3};}
+      \label{fuzzy} % so that one can \ref it elsewhere	
+    \end{center} 
+  \end{figure}
+
+%A cutting-edge area of computation that has a great potential for fisheries applications is fuzzy mapping. A Fuzzy cognitive map is a map within which the relations between the elements (e.g. concepts, events, etc) of a "mental landscape" can be used to compute the "strength of impact" of these elements~\footnote{\url{http://en.wikipedia.org/wiki/Fuzzy_cognitive_map}}.
+
+%speak about GEOCRUST (maps) and fuzzy maps, ICES (Web mapping)
+%link to other platforms
+% open source, agile
+
+
+%\section{Project Outputs}\label{outputs}
+%Write something here
+
+%\section{Work Plan}\label{plan}
+%Write something here
+
+%\section{Capacity Building Components}\label{capacity}
+%Write something here
+
+%\section{FAO Input}\label{fao}
+%Write something here
+
+%\section{Recipient Countries Input}\label{countries}
+%Write something here
+
+%\section{Project Budget}\label{budget}
+%Write something here
+
+\begin{thebibliography}{9}
+
+\bibitem{fishframe}F.\ Degel, T.\ Jansen {\em FishFrame Fisheries and stock assessment data framework}. ICES CM 2006/M:02
+, 2006.
+\bibitem{intercatch}H.\ Kjems-Nielsen, L. \ Inger Larsen, M.\ Zarecki1, T.\ Jansen, B.\ Cowan, P.\
+Sandbeck, M.\ Dueholm, O.\ Skov.{\em InterCatch - a tool for fish stock assessment, status and methods}. ICES CM 2006/M:29, 2006.
+\bibitem{tuna}M.\ Stocker, H.\ Stiff, W.\ Shaw, A.W.\ Argue {\em The Canadian Albacore Tuna Catch and
+Effort Relational Database}. Canadian Technical Report of
+Fisheries and Aquatic Sciences 2701, 2007.
+\bibitem{victoria}L.I.\ Muhoozi {\em Implementation of a Fisheries Management Plan
+(IFMP) Project for Lake Victoria: A Report Of The Fisheries Catch Assessment Survey
+In The Ugandan Waters Of Lake Victoria For The February 2008 Survey}. National Fisheries Resources Research
+Institute (NaFIRRI) and National Agricultural Research
+Organization (NARO), February, 2008.
+\bibitem{dominican}P. A.\ Medley {\em Review Of The Data Collection And Management
+Systems Of The Marine Fisheries In The Dominican
+Republican: Final Report}.
+\bibitem{samoa}N.\ Helm {\em A Report on The Market Survey of Reef and Lagoon Fish Catches In Western
+Samoa}. South Pacific Comission, SPC/lnshoreFish.Res./BP 30, 7 March 1988.
+\bibitem{medfisis} FAO.\emph{Medfisis},\url{http://www.faomedfisis.org/}.
+\bibitem{json} JSON.\emph{JSON},\url{http://json.org/}.
+\bibitem{sqlite} SQLite.\emph{SQlite},\url{http://www.sqlite.org/}.
+\bibitem{fuzzy}H.H.\ Shahri, A.A.Z.\ Barforush.{\em Data mining for removing fuzzy duplicates using fuzzy inference}.
+Fuzzy Information, 2004. Processing NAFIPS '04. IEEE Annual Meeting, 27-30 June 2004. \url{http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=1336319}
+\bibitem{outliers}C.\ López.{\em Quality of Geographic Data
+Detection of Outliers and Imputation of
+Missing Values}. PhD Dissertation on the Royal Institute of Technology, Department of Geodesy and Photogrammetry, Stockholm, Sweden 1997.
+\bibitem{ices}ICES.{\em Workshop on methods for merging metiers for
+fishery based sampling (WKMERGE)
+}. ICES WKMERGE REPORT 2010, Copenhagen, Denmark, 19-22 January 2010.
+\bibitem{morocco}R.\ Forrest, T.\ Pitcher,
+R.\ Watson, H.\ Valtýsson,
+S.\ Guénette {\em Estimating Illegal and Unreported Catches from Marine Ecosystems: Two Case Studies}. Sea Around Us: North Atlantic, Page 81, 19 DEC 2002.
+\bibitem{ices2} ICES.\emph{ICES Data Centre},\url{http://www.ices.dk/datacentre/Submissions/index.aspx}.
+\bibitem{geocrust}J.\ Simoes, C.\ Pinto, M.\ Afonso-Dias. {\em Methodology for Monitoring and  Management of the Crustacean Trawl Fleet. Example of GeoCrust 1.0 GIS} in Finisterra special edition Cartography and Geographic Information Systems, 2005.
+\bibitem{fuzzy2}D. Z.\ Sui {\em A Fuzzy Gis Modeling Approach Land Evaluation For Urban}. Environ. and Urban Systems, Vol. 16, pp. IOl-115, USA, 1992.
+\bibitem{fuzzy3}W.\ Kainz.{\em The mathematics of GIS}. \url{http://goo.gl/fb/CWklR}
+
+\end{thebibliography}
+
+
+
+\end{document}

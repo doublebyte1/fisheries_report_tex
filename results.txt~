@@ -1,0 +1,444 @@
+ 
+data warehouses
+e.g.: fishframe
+DTU
+bottom up approach
+gain confidence of countries, rather than imposing them something
+web-based data warehouses
+
+checking
+raising
+extrapolation
+export
+
+
+import
+data quality
+estimations
+aggregated reports
+
+addresses confidentialityby using aggregated data
+
+web based: 
+advantages: release more often
+
+technologies: (almost) browser independent, .NT and open source
+
+data: commercial. research, fishermen
+
+stratified: time, space (squares), categories
+
+data policy (important - permissions)
+
+
+uses specific xp components for pivot tables: therefore it uses a non-free OS!
+
+open formats: xml and csv
+
+first checkings
+secondary checking
+advanced (optional) checking (customizable checks)
+
+map could be improved:
+is raster
+more layers
+more analysis
+zoom on raster is poor!
+
+
+integration of data (commercial and accosutic surveys)
+method decided by case
+
+
+BSD licence
+
+cooperative
+
+bottom up approach: more collaborative (AGILE)
+
+communication with users: workshops, forums, emails, skype, etc (wiki?)
+
+coordinations for joint solution (do not duplicate work)
+
+2006
+COST, INTERCATCH
+
+///////////////////////////////////
+
+Intercatch
+fisheries sock assessemnt
+
+
+csv: well known-format
+
+screening of the data
+estimation of missing data
+
+
+///////////////////////////////////
+COST
+
+put the others from Pedro
+
+Target:
+Organizations: FAO, ICES, ICCAT, others
+Universities: DTU
+Companies
+
+
+GIS fisheries research
+Fisheries GIS Unit: canterbury
+IFREMER (France)
+University of British Columbia (fisheries centre)
+Environmental Simulation Laboratory (ESL), Japan
+University of Aberdeeen, Zoology Department (fisheries group)
+National Marine Fisheries Service (NOAA), USA
+VIBES (Viability of Exploited Pellagics in Benguela)
+Hellenic Centre for Marine Research (Greece)
+University of Miami, Fisheries, Ecossystems, Modelling and Assessment Research Group
+CEFAS, UK
+DFO
+http://www.dfo-mpo.gc.ca/science/index-eng.htm
+FAO: GisFish and CopMed
+
+///////////////////////////
+Canadian Albacore Tuna Catch and Effort Relational Database System
+The db provides catch estimates, based on sales slips, logbook and hail info.
+estimation at geospatial coordinates
+Access
+
+
+sources:
+hail (space and time) fishing trip
+logbook
+fish slips or sale slips (landings from fish processing plants) - underestimate
+
+plus:
+missing transhipments
+unreported vessel counts
+slip corrections
+
+Target: Effort (days)
+Catch and effort (by area)
+estimations for year based on daily mean
+catch and effort by area
+Estimates before the slips (end of the season)
+redundancy between slips and lognooks enables cross checks
+allocating catch in undefined area (following the general pattern)
+
+Effort
+days/vessel
+catch/vessel
+catch/day
+
+Expand:
+vessels, days, area
+
+access: 2 databases
+- queries, reports, reference tables
+- collected data
+- vb
+
+database normalization
+the process of organizing data to minimize redundancy is called normalization. The goal of database normalization is to decompose relations with anomalies in order to produce smaller, well-structured relations. Normalization usually involves dividing large tables into smaller (and less redundant) tables and defining relationships between them. The objective is to isolate data so that additions, deletions, and modifications of a field can be made in just one table and then propagated through the rest of the database via the defined relationships.
+
+business logic in the UI
+Estimate known unreported catch
+expand
+
+queries to GIS (through excel)
+post-season and in-season analysis
+
+/// artesanal fisheries of Kontagora Reservoir (Nigeria)
+primitive map
+count and weight fishes caught by local fishermen
+statystical anlysis (ANOVA)
+catch assessment survey
+Monitor Control and Surveillance System (FAO) - ????
+it says nothing about the system
+
+
+/// Inland Fisheries in Mekong Basin
+ALternative methods (informal) for artisanal fisheries
+misconceptions and errors
+
+direct methods (CAS, census, counting)
+indirect methods (extrapolation/estimation using GIS, remote sensing, surveys).
+direct methods not appropriated: unlicensed small-scale fisheries
+
+different surveys
+confusion between GIS and modelling (blackbox)
+maps have poor resolution
+catch assessment by group of gears and group of species to reduce costs (every 3-5 yrs)
+
+train personal
+strength the link between FAO and recipients (open source)
+cost effective methods(open source)
+seek cooperation of fishermen
+setup information network to gather data (Wiki)
+provide hardware
+
+///
+An evaluation of The Malawi Catch Assessment Survey
+http://www.fao.org/docrep/006/AD208E/AD208E01.htm
+Forms for data entry
+calculations by hand
+MFT
+reuse old information
+
+//////////////
+dominican republic
+
+fleet census
+discards
+landings
+discards
+fishing efforts
+
+Fish Stock assessment
+catch for commercial species, fleet and period (and space?)
+size and species frequencies for commercial groups
+effort (by fleet and period)
+
+economic information
+
+
+sources:
+interviews
+logbooks, sale slips
+Processing Plants
+
+forms in papper are used!!
+
+Multi stage sampling (three stages)
+
+Landing Site
+Vessel Landings
+Biological Sampling
+
+Estimating Total Landings:
+Simple Random Sampling
+Unequal probability Design
+
+Landings Composition:
+CPUE
+
+Databases
+Use in conjunction with programme to collect data, in order to minimise errors
+
+Database: tables, forms and reports!! (NO)
+
+Agile approach
+
+
+////////////////////////////////////
+Fishboat Project
+
+data collation
+datras
+population biology indices
+population abundance indices
+assessment models
+simulation and testing
+advice and evaluation
+
+costs: travel costs (project meetings and dissemination) and equipment (software and hardware)
+open source software: free
+
+
+costs by type of activity:
+
+research and technological development (innovation)
+Demonstrating
+Training
+Management of the Consortium
+Other
+(contractor+third parties)
+
+////////////////////////////////////////
+Fishframe COST
+
+a framework for analysis of fisheries sampling data
+commercial fisheries
+trawls survey (DATRAS)
+
+Format: cvs and xml (and zip)
+
+standard data exchange format
+
+/////////////////////////////////
+ICES
+Metier based sampling
+
+Evaluating Sampling Schemes
+Inputation: avoid automatic procedures
+
+review sampling frames
+provide probability based sampling frame designs
+fleet based fishery management
+
+metier: homogeneous subdivision
+fishery by vessel type
+or fleet by voyage type
+group of fishing oerations targing similar group of species
+metiers: clusters in space and time
+Consider trip durations when using random sampling
+
+Target population -> PSU -> sampling frame
+
+Multi stage sampling:
+- vessel (PSU), from sampling frame and stratum
+- trips
+- fishing operations
+- catches
+- fish to measure (and age)
+
+sampling frame: list of sampling units that can be selected independently with known probability by random sampling
+PSU are the cells of the sampling frame
+
+vessels-> trips
+(PSU)-> SSU
+
+sampling frame: identify the clusters
+PSU (port in space and time)
+
+Sampling Schemes:
+Census
+Probability based sampling
+Non-probability based sampling(misleading and biased)
+
+Selection of PUS using a vessel list frame
+- Stratified Random Sampling with Equal Probability
+- Stratified Systematic Sampling with Random Component
+- Unequal probability sampling 
+- Sampling with an intention to apply ration and regression estimators
+- Non-probability methods
+- Partial coverage of sampling frame
+
+Selection of PSU using an area frame (LS or GLS)
+- Stratified Random Sampling of PSU
+- Stratified systematic sampling with random component
+- Sampling with probability proportional to size
+- domains of interest witthin the data
+
+PSU: Vessel
+SSU: trip
+then: hauls and boxes
+Target population, sampling frame, PSU
+Stratification (spatial, size, time)
+
+First stage:
+Fishing centres (space and time)
+second stages:
+vessels (type)
+
+trip?
+
+third stage:
+haul
+four stage:
+catch
+
+raising each stage (from top to bottom)
+
+PSU->
+Port-> Vessel
+
+Inputation
+
+Design based sampling schemes x model based sampling approaches
+
+WKMerge, WKPRrecise
+
+///////////////////////
+A Report on The Market Survey of Reef and Lagoon Fish Catches In Western
+Samoa
+
+Estimates of local fishery production based on
+surveys in fish market
+poort sampling design due to pratical constraints
+rough map
+catch by region, by fishing method, by composition
+dbase
+problems with surveys
+Market data needs to be complemented by other sources
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////
+distributed system
+
+data entry
+data analysis
+
+local,regional, nacional, supra nacional
+
+
+deteccao de outliers:
+varios metodos
+possibilidade de scripting
+plugins?
+
+tempo, espaco, tipo de embarcacao
+
+bulk logsheet
+informacao a varios niveis
+
+minor strata: strata
+categoria comercial
+
+//////////////////////////
+
+different stages of process (data entry, etc)
+distributed model (client/server)
+plugins on different methods (data checking routine for detection of outliers, raising methods)
+identify standard levels (viagem, lance) and allow uncertainty on each one
+integrate data from different sources (vms, logbook, vendas, etc)
+refine GIS component (polygon, point, fuzzy, etc)
+
+participation of the recipients, continuity of the project, etc 
+
+haul filling
+inputation
+
+UI for query builder
+
+importance of finding standards for data formats (data exchange)
+
+
+/////////////////////
+SEE:
+
+SAMPLED BASED FISHERY SURVEYS (FAO, 2002)
+
+http://wwz.ifremer.fr/cost (fishcost)
+
+
+
+
+
+
+
+
+
+
+
+
+

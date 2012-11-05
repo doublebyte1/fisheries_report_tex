@@ -1,0 +1,12 @@
+
+1 - state of the art of fisheries management tools; research which systems are implemented (organisations, countries, companies, etc); if possible sample/test these systems.
+2 - analysis: asks some questions about these systems:
+ - what do they provide?
+ - what are their strengths?
+ - what are their weaknesses?
+ - which technologies do they use?
+3 - Identify the up to date technologies (GIS, GPS, programming languages, DBMS, etc) that could be used to implement a fisheries management system; focus mainly on free and open source technologies (FOOS), as a mean of 
+guaranteeing the transferring of ownership and keeping the continuity of this work.
+- Go beyond the existent systems and pose new questions that could be answered at the light of the new technologies (e.g., ways of improving the quality of data before entering the system allowing to recreate/replace missing/erroneous information).
+4 - design a system that could add something to the existent ones, in terms of added/improved functionality but also in terms of non functional characteristics (maintainability, robustness, efficiency). Reuse as much as possible other systems (or parts of other systems), required that this does not break any property rights or compromises the final license. Plan a modular design, with components that are more or less independent and thus could be easily replaced/upgraded, or whose development could be transfered to different involved parts. Enforce standards for open formats and protocols to ensure its compatibility with other systems and increase the maintainability.
+

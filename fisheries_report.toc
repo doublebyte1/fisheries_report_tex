@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Background}{2}
+\contentsline {subsection}{\numberline {2.1}General Context}{2}
+\contentsline {section}{\numberline {3}Project Objectives}{24}
+\contentsline {subsection}{\numberline {3.1}Data Input}{24}
+\contentsline {subsection}{\numberline {3.2}Data Validation}{26}
+\contentsline {subsection}{\numberline {3.3}Data Transformation}{27}
+\contentsline {subsection}{\numberline {3.4}Data Output}{28}
+\contentsline {section}{\numberline {4}Aknoweledgments}{28}
+\contentsline {section}{References}{43}

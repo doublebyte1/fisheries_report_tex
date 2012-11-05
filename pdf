@@ -1,0 +1,4 @@
+pdflatex fisheries_report
+pdflatex fisheries_report
+okular fisheries_report.pdf
+
