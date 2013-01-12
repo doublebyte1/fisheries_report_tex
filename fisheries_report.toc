@@ -1,10 +1,16 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {2}Background}{2}
 \contentsline {subsection}{\numberline {2.1}General Context}{2}
-\contentsline {section}{\numberline {3}Project Objectives}{24}
-\contentsline {subsection}{\numberline {3.1}Data Input}{24}
-\contentsline {subsection}{\numberline {3.2}Data Validation}{26}
-\contentsline {subsection}{\numberline {3.3}Data Transformation}{27}
-\contentsline {subsection}{\numberline {3.4}Data Output}{28}
-\contentsline {section}{\numberline {4}Aknoweledgments}{28}
-\contentsline {section}{References}{43}
+\contentsline {section}{\numberline {3}Project Objectives}{29}
+\contentsline {subsection}{\numberline {3.1}Data Input}{29}
+\contentsline {subsection}{\numberline {3.2}Data Validation}{31}
+\contentsline {subsection}{\numberline {3.3}Data Transformation}{32}
+\contentsline {subsection}{\numberline {3.4}Data Output}{34}
+\contentsline {section}{\numberline {4}Key Aspects of the System}{42}
+\contentsline {subsection}{\numberline {4.1}AGILE Approach}{42}
+\contentsline {subsection}{\numberline {4.2}Alternatives to the Relational Model}{46}
+\contentsline {subsection}{\numberline {4.3}Redefining the Centre of the Application}{48}
+\contentsline {subsection}{\numberline {4.4}Identifying Reuse Opportunity for Use Cases}{49}
+\contentsline {subsection}{\numberline {4.5}Use of Free and Open Source Software}{49}
+\contentsline {section}{\numberline {5}Aknoweledgments}{53}
+\contentsline {section}{References}{54}
