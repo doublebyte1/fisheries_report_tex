@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.23)  12 JAN 2013 19:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.11.23)  12 JAN 2013 21:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -688,33 +688,8 @@ File: Chart_license.png Graphic file (type png)
 Package pdftex.def Info: Chart_license.png used on input line 124.
 (pdftex.def)             Requested size: 418.25368pt x 244.11046pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
-[]\OT1/cmr/m/n/10.95 Web- based
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
-\OT1/cmr/m/n/10.95 data ware-house
- []
-
-
-Underfull \hbox (badness 1895) in paragraph at lines 157--157
-\OT1/cmr/m/n/10.95 ap-pli-ca-tion. It
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
-\OT1/cmr/m/n/10.95 is a plat-tform
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
-\OT1/cmr/m/n/10.95 for data com-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
-\OT1/cmr/m/n/10.95 pi-la-tion and
+Underfull \hbox (badness 4291) in paragraph at lines 157--157
+\OT1/cmr/m/n/10.95 com-pi-la-tion and
  []
 
 
@@ -803,8 +778,23 @@ Underfull \hbox (badness 7047) in paragraph at lines 158--158
  []
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 159--159
-\OT1/cmr/m/n/10.95 search-ing, view-
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+[]\OT1/cmr/m/n/10.95 Free in-ter-face
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+\OT1/cmr/m/n/10.95 for search-ing,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+\OT1/cmr/m/n/10.95 view-ing and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+\OT1/cmr/m/n/10.95 down-load-ing
  []
 
 
@@ -1369,7 +1359,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--168
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 168--168
-\OT1/cmr/m/n/10.95 efec-tu-ate some
+\OT1/cmr/m/n/10.95 ef-fec-tu-ate some
  []
 
 
@@ -1434,12 +1424,12 @@ Underfull \hbox (badness 4467) in paragraph at lines 168--168
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 168--168
-\OT1/cmr/m/n/10.95 con-tain-ins the
+\OT1/cmr/m/n/10.95 and the other
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 168--168
-\OT1/cmr/m/n/10.95 data and the
+\OT1/cmr/m/n/10.95 one the app
  []
 
 
@@ -1494,7 +1484,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--169
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 169--169
-\OT1/cmr/m/n/10.95 with em-bebed
+\OT1/cmr/m/n/10.95 with em-bed-ded
  []
 
 
@@ -1604,12 +1594,12 @@ Underfull \hbox (badness 6236) in paragraph at lines 170--170
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 170--170
-\OT1/cmr/m/n/10.95 Ar-tif-i-cal In-tel-li-
+\OT1/cmr/m/n/10.95 Ar-ti-fi-cial In-tel-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--170
-\OT1/cmr/m/n/10.95 gence meth-ods
+Underfull \hbox (badness 6236) in paragraph at lines 170--170
+\OT1/cmr/m/n/10.95 li-gence meth-ods
  []
 
 
@@ -3114,7 +3104,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--242
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 242--242
-\OT1/cmr/m/n/10.95 plattform, but
+\OT1/cmr/m/n/10.95 platform, but
  []
 
 
@@ -3218,8 +3208,8 @@ Underfull \hbox (badness 5771) in paragraph at lines 278--278
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 278--278
-\OT1/cmr/m/n/10.95 tform; - no in-stal-la-tion
+Underfull \hbox (badness 3271) in paragraph at lines 278--278
+\OT1/cmr/m/n/10.95 form; - no in-stal-la-tion
  []
 
 
@@ -3347,8 +3337,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 287--287
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 287--287
-\OT1/cmr/m/n/10.95 even af-ter with-drawl of
+Underfull \hbox (badness 3219) in paragraph at lines 287--287
+\OT1/cmr/m/n/10.95 even af-ter with-draw of
  []
 
 
@@ -3387,13 +3377,8 @@ Underfull \hbox (badness 1755) in paragraph at lines 289--289
  []
 
 
-Underfull \hbox (badness 2564) in paragraph at lines 289--289
-\OT1/cmr/m/n/10.95 time to re-spond proac-
- []
-
-
-Underfull \hbox (badness 2626) in paragraph at lines 289--289
-\OT1/cmr/m/n/10.95 tively to evolv-ing chal-
+Underfull \hbox (badness 3000) in paragraph at lines 289--289
+\OT1/cmr/m/n/10.95 rules; - it is pro-vided
  []
 
 
@@ -3412,8 +3397,18 @@ Underfull \hbox (badness 5217) in paragraph at lines 290--290
  []
 
 
-Underfull \hbox (badness 5563) in paragraph at lines 290--290
-\OT1/cmr/m/n/10.95 pro-duces un-bi-ased es-ti-
+Underfull \hbox (badness 5431) in paragraph at lines 290--290
+[]\OT1/cmr/m/n/10.95 - the prob-a-bil-ity sam-
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 290--290
+\OT1/cmr/m/n/10.95 pling pro-duces un-bi-ased
+ []
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 290--290
+\OT1/cmr/m/n/10.95 - the pre-ci-sion in such
  []
 
 
@@ -3432,38 +3427,13 @@ Underfull \hbox (badness 1424) in paragraph at lines 291--291
  []
 
 
-Underfull \hbox (badness 6094) in paragraph at lines 291--291
-[]\OT1/cmr/m/n/10.95 - the data qual-ity of
+Underfull \hbox (badness 1552) in paragraph at lines 291--291
+\OT1/cmr/m/n/10.95 sur-vey is threat-ened by
  []
 
 
-Underfull \hbox (badness 1496) in paragraph at lines 291--291
-\OT1/cmr/m/n/10.95 by the hir-ing of causal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 291--291
-\OT1/cmr/m/n/10.95 work-ers, with-out ad-e-
- []
-
-
-Underfull \hbox (badness 8132) in paragraph at lines 291--291
-\OT1/cmr/m/n/10.95 quate su-per-vi-sion; the
- []
-
-
-Underfull \hbox (badness 1648) in paragraph at lines 291--291
-\OT1/cmr/m/n/10.95 same for data en-try in
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 291--291
-\OT1/cmr/m/n/10.95 database techol-ogy; -
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 291--291
-\OT1/cmr/m/n/10.95 more data (from the
+Underfull \hbox (badness 1596) in paragraph at lines 291--291
+\OT1/cmr/m/n/10.95 per-vi-sion; the same for
  []
 
 
@@ -3603,17 +3573,17 @@ ut line 508.
 File: agileTeamSmall.jpg Graphic file (type jpg)
 
 <use agileTeamSmall.jpg>
-Package pdftex.def Info: agileTeamSmall.jpg used on input line 551.
+Package pdftex.def Info: agileTeamSmall.jpg used on input line 552.
 (pdftex.def)             Requested size: 334.60422pt x 225.05334pt.
  [46] [47 <./agileTeamSmall.jpg>] [48] [49] [50]
 [51] [52] [53]
-Underfull \hbox (badness 10000) in paragraph at lines 674--675
+Underfull \hbox (badness 10000) in paragraph at lines 678--679
 []\OT1/cmr/m/n/10.95 ICES \OT1/cmr/m/it/10.95 EcoSys-tem-Data3.0[]Release\OT1/c
 mr/m/n/10.95 . $\OT1/cmtt/m/n/10.95 http : / / ecosystemdata . ices . dk /
  []
 
 
-Underfull \hbox (badness 6658) in paragraph at lines 677--678
+Underfull \hbox (badness 6658) in paragraph at lines 681--682
 []\OT1/cmr/m/n/10.95 Mappamond \OT1/cmr/m/it/10.95 Fish-ery[]Analyst[]V2[]manua
 l\OT1/cmr/m/n/10.95 . $\OT1/cmtt/m/n/10.95 http : / / www . mappamondogis . it 
 / pdf /
@@ -3622,13 +3592,13 @@ l\OT1/cmr/m/n/10.95 . $\OT1/cmtt/m/n/10.95 http : / / www . mappamondogis . it
 [54
 
 ] [55]
-Underfull \hbox (badness 5490) in paragraph at lines 715--716
+Underfull \hbox (badness 5490) in paragraph at lines 719--720
 []\OT1/cmr/m/n/10.95 Wikipedia. \OT1/cmr/m/it/10.95 Re-la-tional model $\OT1/cm
 tt/m/n/10.95 https : / / en . wikipedia . org / wiki / Relational _
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 717--718
+Underfull \hbox (badness 1983) in paragraph at lines 721--722
 []\OT1/cmr/m/n/10.95 Wikipedia. \OT1/cmr/m/it/10.95 Even-tual Con-sis-tency $\O
 T1/cmtt/m/n/10.95 http : / / en . wikipedia . org / wiki / Eventual _
  []
@@ -3645,7 +3615,7 @@ Here is how much of TeX's memory you used:
  9192 multiletter control sequences out of 15000+200000
  11959 words of font info for 42 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,12n,43p,1070b,525s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,12n,43p,1058b,525s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
@@ -3658,7 +3628,7 @@ nts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on fisheries_report.pdf (56 pages, 2614283 bytes).
+Output written on fisheries_report.pdf (56 pages, 2614456 bytes).
 PDF statistics:
  266 PDF objects out of 1000 (max. 8388607)
  166 compressed objects within 2 object streams
